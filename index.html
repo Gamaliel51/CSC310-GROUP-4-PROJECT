@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC310 GROUP 4</title>
+</head>
+<body>
+    <script src="script.js" defer></script>
+    <nav class="navbar">
+        <a onclick="clickBio()" class="navlink a">Group BioData</a>
+        <a onclick="clickCalc()" class="navlink b">Calculator</a>
+        <a onclick="clickForm()" class="navlink b">Add New BioData</a>
+    </nav>
+    <hr>
+
+
+    <div class="frame">
+<!--Biodata*/-->
+        <div class="biodata">
+            
+            <!--Cards holding biodata*/-->
+            <div class="datacard">         
+                    <div class="item">NAME: Ndukwe Miracle</div>
+                    <div class="item">PROGRAMME: COMPUTER SCIENCE</div>
+                    <div class="item">MATRIC NO: 20CG028104</div>
+                    
+                
+            </div>
+        
+
+            <div class="datacard">
+                
+            
+                <div class="item">NAME: OLULEYE JOSHUA</div>
+                <div class="item">PROGRAMME: COMPUTER SCIENCE</div>
+                <div class="item">MATRIC NO: 20CG028124 </div>
+                
+            </div>
+
+            <div class="datacard">
+
+                
+                <div class="item">NAME: CHINEDU IKECHUKWU EMMANNUEL</div>
+                <div class="item">PROGRAMME: COMPUTER SCIENCE</div>
+                <div class="item">MATRIC NO: 20CG028057 </div>
+                
+                
+            </div>
+
+            <div class="datacard">
+            
+                <div class="item">NAME: EJEFOBIRI CHUKWUDUMAGA</div>
+                <div class="item">PROGRAMME: COMPUTER SCIENCE</div>
+                <div class="item">MATRIC NO: 20CG028070</div>
+                
+            </div>
+
+            <div class="datacard">
+            
+                <div class="item">NAME: OPARAODU EVANS EMMANNUEL</div>
+                <div class="item">PROGRAMME: COMPUTER SCIENCE</div>
+                <div class="item">MATRIC NO: 20CE028327</div>
+                
+            </div>
+
+            <div class="datacard">
+            
+                <div class="item">NAME: OGUNYEMI OPENIFOLUWA EXALTATION</div>
+                <div class="item">PROGRAMME: COMPUTER SCIENCE</div>
+                <div class="item">MATRIC NO: 20CH028177</div>
+                
+            </div>
+
+            <div class="datacard hidden">
+            </div>
+
+            <div class="datacard">
+            
+                <div class="item">NAME: AKERELE OLUWASEMILORE</div>
+                <div class="item">PROGRAMME: COMPUTER SCIENCE</div>
+                <div class="item">MATRIC NO: 20CH028148</div>
+                
+            </div>
+        </div>
+
+<!--Calculator*/-->
+        <div class="calc">
+            
+        <!--Calculator Screen*/-->
+            <input type="text" class="screen" id="scr" value="">
+        
+
+        <!--Calculator Buttons*/-->
+            <div class="numbut">  
+            
+            
+        
+                <div class="sign">
+                    <button class="but" onclick="inputScreen('7')">7</button>
+                    <button class="but" onclick="inputScreen('6')">6</button>
+                    <button class="but" onclick="inputScreen('3')">3</button>   
+                    <button class="but" onclick="inputScreen('/')">/</button>
+                </div>
+
+                <div class="sign">
+                    <button class="but" onclick="inputScreen('8')">8</button>
+                    <button class="but" onclick="inputScreen('5')">5</button>
+                    <button class="but" onclick="inputScreen('2')">2</button>
+                    <button class="but" onclick="inputScreen('0')">0</button>
+                </div>
+                    
+                    
+                <div class="sign">
+                    <button class="but" onclick="inputScreen('9')">9</button>
+                    <button class="but" onclick="inputScreen('4')">4</button>                
+                    <button class="but" onclick="inputScreen('1')">1</button>
+                    <button class="but" onclick="delScreen()">DEL</button>
+                    
+                </div>
+                
+                <div class="sign">
+                    <button class="but" onclick="inputScreen('+')">+</button>
+                    <button class="but" onclick="inputScreen('-')">-</button>
+                    <button class="but" onclick="inputScreen('*')">*</button>
+                    <button class="but" onclick="calcAns()">=</button>
+                </div>
+            </div>
+        </div>
+<!--Form*/-->
+        <div class="form">
+            <form action="/login" method="post">
+
+                <label>Name:</label><br>
+                <input  name="user" type="text" placeholder="Name" class="control" >
+
+                <label>Matric Number:</label><br>
+                <input  name="matric" type="text"  placeholder="Matric Number" class="control">
+                
+                <label>Course of Study:</label><br>
+                <input  name="Course" type="text" placeholder="Course of study" class="control">
+                
+
+                <P >Please fill in the space and Click the button to update the biodata</P>
+
+                <button class="control">Submit</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
